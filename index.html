@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>my site</title>
+<style>
+#grad1 {
+    height: 100%;
+    background: linear-gradient(to bottom right, cyan, yellow);}
+#pad {
+padding-right=5% ;
+padding-left = 5% ;
+}
+</style>
+</head>
+
+<div id="grad1">
+<body>
+<form action="/cgi-bin/rec.py" method="POST">
+<h1> <center><b> Welcome to My Project</b></center></h1>
+<br>
+<br>
+<br>
+<div id="pad">
+<center><table >
+<tr><th>Login<br><br> </th></tr>
+<tr><td>Username </td></tr>
+<tr><td><input type="text" name="u"><br><br></td></tr>
+<tr><td>Password</td></tr>
+<tr><td><input type="password" name="p"><br><br><br></td></tr>
+<tr><td><input type="submit" value="Login"></form><br><br>
+ OR<br><br><form action="/cgi-bin/reg.py" method="POST">
+<input type="submit" value="Register"></form></td></tr>
+</table>
+</center>
+</div>
+
+</form>
+</body>
+</div>
+</html>

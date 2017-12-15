@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Cloud</title>
+<style>
+#grad1 {
+    height: 100%;
+    background: linear-gradient(to bottom right, green, yellow);}
+
+</style>
+</head>
+
+<div id="grad1">
+<body>
+<form action="/cgi-bin/cl.py" method="POST">
+<h1> <center> <b> My Clouds</b></center></h1>
+<br>
+<br>
+<br>
+<center><table >
+<tr><td>
+<input type="radio" name="a" value ="saas" method="POST">Software As A Service (SAAS)<br><br></td></tr>
+<br><tr><td><input type="radio" name="a" value ="staas" method="POST">Storage As A Service (STAAS) <br><br></td></tr>
+<br><tr><td><input type="radio" name="a" value ="paas" method="POST">Plateform As A Service (PAAS) <br><br></tr></td>
+<br><tr><td><input type="radio" name="a" value ="iaas" method="POST">Infrastructure As A Service (IAAS)<br><br></tr></td>
+<br>
+<tr><td><input type="submit" value="Execute"></tr></td>
+</table>
+</center>
+</form>
+</body>
+</html>
