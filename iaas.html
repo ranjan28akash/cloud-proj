@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Cloud</title>
+<style>
+#grad1 {
+    height: 100%;
+    background: linear-gradient(to bottom right, white, purple);}
+</style>
+</head>
+
+<div id="grad1">
+<body>
+<form action="/cgi-bin/iaas.py" method="POST">
+<h1> <center> <b> Get an O.S. of your own configuration</b></center></h1>
+<br>
+<br>
+<br>
+<center>
+<table width="68%" cellpadding="8">
+<tr><td><b>O.S</td><td><b>RAM</td><td><b>CPU</td><td><b>Hard Disk</td></tr>
+<tr><td>
+<input type="radio" name="os" value ="rhel" method="POST">RHEL 7.2</th>
+<td><input type="radio" name="ram" value ="1024" method="POST">1 GB</th>
+<td><input type="radio" name="cpu" value ="1" method="POST">1 core</th>
+<td><input type="radio" name="hd" value ="live" method="POST">Live</td>
+</tr>
+<tr><td>
+<input type="radio" name="os" value ="win10" method="POST">Windows 10</td>
+<td><input type="radio" name="ram" value ="2048" method="POST">2 GB</td>
+<td><input type="radio" name="cpu" value ="2core" method="POST">2 core</td>
+<td><input type="radio" name="hd" value ="5" method="POST">5 GB</td>
+</tr>
+<tr><td>
+<input type="radio" name="os" value ="ubuntu" method="POST">Ubuntu</td>
+<td><input type="radio" name="ram" value ="3072" method="POST">3 GB</td>
+<td><input type="radio" name="cpu" value ="3" method="POST">3 core</td>
+<td><input type="radio" name="hd" value ="8" method="POST">8 GB</td>
+</tr>
+<tr>
+<td><input type="radio" name="os" value ="kali" method="POST">Kali Linux</td>
+<td><input type="radio" name="ram" value ="4096" method="POST">4 GB</td>
+<td></td>
+<td><input type="radio" name="hd" value ="9" method="POST">9 GB</td>
+</tr>
+<tr>
+<td><input type="radio" name="os" value ="fedora" method="POST">Fedora</td>
+<td></td>
+<td></td>
+<td><input type="radio" name="hd" value ="10" method="POST">10 GB</td>
+</tr>
+</table>
+<br><br>
+
+<input type="submit" value="Create"></tr></td>
+</center>
+</form></body>
+</div></html>
+
