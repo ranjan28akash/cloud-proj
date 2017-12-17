@@ -11,8 +11,8 @@ cpu=webdata.getvalue('cpu')
 hd=webdata.getvalue('hd')
 
 if hd=="live" :
-	cmd="virt-install --cdrom /var/www/html/iso/"+os+".iso --ram "+ram+" --vcpu "+cpu+" --nodisk --name my"+os+" --graphics vnc,listen=127.0.0.1,port=5912,password=redhat"
+	cmd="sudo virt-install --cdrom /root/Downloads/iso/"+os+".iso --ram "+ram+" --vcpu "+cpu+" --nodisk --name my"+os+" --graphics vnc,listen=127.0.0.1,port=5912,password=redhat"
 else :
-	cmd="virt-install --cdrom /var/www/html/iso/"+os+" --ram "+ram+" --vcpu "+cpu+" --disk "+hd+" --name my"+os+" --graphics vnc,listen=127.0.0.1,port=5912,password=redhat"
+	cmd="sudo virt-install --cdrom /root/Downloads/iso/"+os+".iso --ram "+ram+" --vcpu "+cpu+" --disk "+hd+" --name my"+os+" --graphics vnc,listen=127.0.0.1,port=5912,password=redhat"
 
-print cmd
+commands.getoutput(cmd)
